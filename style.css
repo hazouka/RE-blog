@@ -1115,20 +1115,21 @@ kbd {
   }
 
   .site-header {
-    padding: 0.55rem 0.75rem;
-    height: auto;
-    min-height: var(--header-h);
-    flex-wrap: wrap;
-    gap: 0.45rem;
+    padding: 0 0.75rem;
+    height: var(--header-h);
+    flex-wrap: nowrap;
+    gap: 0.6rem;
     align-items: center;
   }
 
   .header-left {
-    flex: 1;
+    flex-shrink: 1;
     min-width: 0;
   }
 
   .header-right {
+    flex: 1;
+    min-width: 0;
     display: flex;
     justify-content: flex-end;
   }
@@ -1137,16 +1138,25 @@ kbd {
     display: flex;
     align-items: center;
     gap: 0.45rem;
-    overflow-x: auto;
-    padding-bottom: 0.2rem;
+    width: 100%;
+    justify-content: flex-end;
   }
 
   .search-hdr {
-    width: 100%;
+    max-width: 180px;
+    flex: 1;
+    min-width: 0;
+    height: 32px;
+    padding: 0 0.6rem;
   }
 
   .bc-title {
-    max-width: 160px;
+    max-width: 80px;
+  }
+
+  .theme-pill-btn {
+    padding: 0.22rem 0.5rem;
+    font-size: 0.65rem;
   }
 
   .view {
